@@ -1,0 +1,24 @@
+//Definir variables
+$myprimary:   #07331B;
+$mysecondary: #1D5113;
+$myinfo:      #5C8326;
+$mylight:     #97BE11;
+$mydark:      #8C4B37;
+
+$myBgColorLight: #ffa820;
+
+$listfonts: 45px, 25px, 15px;
+
+@mixin setflex ($dir, $just){
+    display: flex;
+    flex-direction: $dir;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: $just;
+}
+
+@mixin setittle ($font, $ize, $weight) {
+    font-family: $font;
+    font-size: $ize;
+    font-weight: $weight;
+}

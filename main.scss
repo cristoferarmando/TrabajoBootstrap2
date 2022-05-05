@@ -1,0 +1,31 @@
+//
+@import "src/main/variables";
+@import "src/main/bootstrap";
+
+
+//icons
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+
+//
+*{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.card{
+    &-title{
+    @include setflex (row, space-around);
+    }
+    &-text{
+        @include setflex (row, space-around);
+        }
+}
+
+.figure{
+    @include setflex (row, space-around);
+    padding: 40px;
+}
