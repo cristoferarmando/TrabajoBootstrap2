@@ -22,3 +22,16 @@ $listfonts: 45px, 25px, 15px;
     font-size: $ize;
     font-weight: $weight;
 }
+
+@mixin setcard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 5px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+}

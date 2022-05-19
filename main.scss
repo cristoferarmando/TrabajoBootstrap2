@@ -1,10 +1,12 @@
 //
 @import "src/main/variables";
 @import "src/main/bootstrap";
-
+@import "src/main/cards";
 
 //icons
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 
 //
 *{
@@ -16,16 +18,37 @@
     text-decoration: none;
 }
 
-.card{
-    &-title{
-    @include setflex (row, space-around);
-    }
-    &-text{
-        @include setflex (row, space-around);
-        }
-}
-
 .figure{
     @include setflex (row, space-around);
     padding: 40px;
+}
+
+#jumbo{
+    @include setflex(row, space-around);
+        margin:5%;
+        padding: 5px;
+        font-family: 'Manrope', sans-serif;
+        flex-wrap: nowrap;
+        align-items: center;
+        color:$mydark;
+}
+
+#contacto{
+    @include setflex (row, space-around);
+    background-color: $myinfo;
+    padding: 20px;
+    font-family: 'Manrope', sans-serif;
+
+}
+
+.btn{
+    color:$mysecondary;
+    font-family: 'Manrope', sans-serif;
+    &-menu{
+        display: flex;
+        flex-direction: row;
+    }
+    &-menu:hover{
+        color:white;
+    }
 }

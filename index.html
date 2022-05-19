@@ -27,6 +27,7 @@
     
 </head>
 <body> 
+
 <!--Navbar-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
@@ -36,15 +37,15 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a name="texto" class="nav-link active" aria-current="page" href="#Inicio">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a name="texto" class="nav-link" href="#jumbo">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
+            <a name="texto" class="nav-link" href="#contacto">Contáctanos</a>
           </li>
         </ul>
       </div>
@@ -54,16 +55,16 @@
 
 <!--Banner-->
 
-<div class="card bg-dark text-white">
+<div id="Inicio" class="card bg-dark text-white">
     <img src="public/img/blur-coffee-cafe-shop-restaurant-with-bokeh-background-xd.jpg" 
     class="card-img" alt="...">
     <div class="card-img-overlay">
         <figure class="figure">
             <img src="public/img/Recurso 5g.png" class="figure-img img-fluid rounded" alt="...">
           </figure>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text">Last updated 3 mins ago</p>
-      <h3>La importancia de consumir productos orgánicos se debe al
+      <p name="texto" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p name="texto" class="card-text">Last updated 3 mins ago</p>
+      <h3 name="texto">La importancia de consumir productos orgánicos se debe al
          beneficio que generan los mismos para <br> el cuerpo humano gracias a su cantidad 
          de nutrientes, los cuales no están alterados por ningún químico, conservante, 
          colorante, insecticida, pesticida u hormona como suelen utilizar los alimentos
@@ -75,39 +76,39 @@
         <section id="jumbo">
           <div class="jumbotron jumbotron-fluid w-28">
               <div class="container">
-                <img src="public/imagenes/casoexito1.jpg" width="550px" height="700px" class="img-fluid" alt="...">
+                <img src="public/img/plate.jpeg" width="550px" height="700px" class="img-fluid" alt="...">
                   <h1 class="display-3">Nuestro Menú</h1>
-                  <p class="lead">Menú Healthy and natural</p>
+                  <p name="texto" class="lead">Menú Healthy and natural</p>
                   <hr class="my-2">
-                  <p>More info</p>
+                  <p name="texto">More info</p>
                   <p class="lead">
-                      <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+                      <a name="texto" class="btn btn-primary btn-lg" href="#menucard" role="button">Ver Menú</a>
                   </p>
               </div>
           </div>
     
           <div class="jumbotron jumbotron-fluid w-28">
             <div class="container">
-                <img src="public/imagenes/casoexito2.jpg" width="550px" height="700px" class="img-fluid" alt="...">
-                <h1 class="display-3">Consultas con nutricionistas</h1>
-                <p class="lead">Más información</p>
+                <img src="public/img/diferencia_entre_nutricionista_y_dietista_51905_orig.jpg" width="550px" height="700px" class="img-fluid" alt="...">
+                <h1 class="display-3">Consulta nutricionista</h1>
+                <p name="texto" class="lead">Más información</p>
                 <hr class="my-2">
-                <p>More info</p>
+                <p name="texto">More info</p>
                 <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+                    <a name="texto" class="btn btn-primary btn-lg" href="#nutri" role="button">Más información</a>
                 </p>
             </div>
         </div>
 
         <div class="jumbotron jumbotron-fluid w-28">
           <div class="container">
-              <img src="public/imagenes/casoexito2.jpg" width="550px" height="700px" class="img-fluid" alt="...">
-              <h1 class="display-3">Proveedores</h1>
-              <p class="lead">Más información</p>
+              <img src="public/img/proveedor.jpg" width="550px" height="700px" class="img-fluid" alt="...">
+              <h1 class="display-3">Nuestros Proveedores</h1>
+              <p name="texto" class="lead">Más información</p>
               <hr class="my-2">
-              <p>More info</p>
+              <p name="texto">More info</p>
               <p class="lead">
-                  <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+                  <a name="texto" class="btn btn-primary btn-lg" href="#proveedor" role="button">Ver proveedores</a>
               </p>
           </div>
       </div>
@@ -115,40 +116,51 @@
 
     <!--CARDS-->
     <section>
-      <div id="vector" class="card card-primario">
-        <header>
+
+      <!--Menú-->
+      <div id="menucard" class="card card-primario">
+        <header class="tarjet">
             <h2 class="ttl-xm">Healthy and Natural</h2>
-            <img class="imagenes"src="public/imagenes/artevectorial.jpg" width="250px" height="232px" alt="">
+            <img class="figure-img img-fluid" src="public/img/portadacard.jpg" width="350px" height="232px" alt="">
         </header>
-        <div>
-            <p class="ttl-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Itaque tempora odio in porro, velit aut.</p>
-        </div>
-            <footer class="ttl-xs">Colocar menú y foto de comida</footer>
-    </div>
+        <div class="tarjetamenu">
+            <p name="texto" class="ttl-xs">A la parrilla</p>
+            <img class="figure-img img-fluid" src="public/img/grilled.jpg" width="350px" height="232px" alt="">
+       
+          <p name="texto" class="ttl-xs">Al horno</p>
+          <img class="figure-img img-fluid" src="public/img/oven.jfif" width="350px" height="232px" alt="">
+      </div>
+      <div class="tarjetamenu">
+        <p name="texto" class="ttl-xs">Ensaladas frescas</p>
+        <img class="figure-img img-fluid" src="public/img/salad.jpg" width="350px" height="232px" alt="">
+    
+      <p name="texto" class="ttl-xs">Comida orgánica <br> dieta cetogénica</p>
+      <img class="figure-img img-fluid" src="public/img/organic.jpg" width="350px" height="232px" alt="">
+  </div>
+    </div> <!--Menú-->
 
-    <div id="pintura" class="card card-sucess">
-        <header>
+    <div id="nutri" class="card card-sucess">
+        <header class="tarjet">
             <h2 class="ttl-xm">Consulta con nutricionistas</h2>
-            <img class="imagenes" src="public/imagenes/pinturadigital.jpg" width="350px" height="250px" alt="">
+            <img class="imagenes" src="public/img/NUTRICIONISTA.jpg" width="350px" height="250px" alt="">
         </header>
         <div>
-            <p class="ttl-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <p name="texto" class="ttl-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Itaque tempora odio in porro, velit aut.</p>
         </div>
-            <footer class="ttl-xs">Lorem ipsum dolor sit amet.</footer>
+            <footer name="texto" class="ttl-xs">Lorem ipsum dolor sit amet.</footer>
     </div>
 
-    <div id="foto" class="card card-warning">
-        <header>
+    <div id="proveedor" class="card card-warning">
+        <header class="tarjet">
             <h2 class="ttl-xm">Nuestros proveedores</h2>
-            <img class="imagenes" src="public/imagenes/foto.jpg" width="350px" height="250px" alt="">
+            <img class="imagenes" src="public/img/PROVEEDOR.png" width="350px" height="250px" alt="">
         </header>
         <div>
-            <p class="ttl-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <p name="texto" class="ttl-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Itaque tempora odio in porro, velit aut.</p>
         </div>
-            <footer class="ttl-xs">Ceritificados por...</footer>
+            <footer name="texto" class="ttl-xs">Ceritificados por...</footer>
     </div>
     </section>
 
@@ -156,8 +168,8 @@
 
      <footer id="contacto">
       <h2>Contáctanos</h2>
-      <ul class="btn btn-menu">
-                <li class="ttl-xs"><a href="#" class="btn btn-menu1"> correocursos@gmail.com</a></li>
+      <ul name="texto" class="btn btn-menu">
+                <li class="ttl-xs"><a href="#" class="btn btn-menu1"> handvegan@gmail.com</a></li>
                 <li class="ttl-xs"><a href="#" class="btn btn-menu1">Facebook</a></li>
                 <li class="ttl-xs"><a href="#" class="btn btn-menu1">Twitter</a></li>
                 <li class="ttl-xs"><a href="#" class="btn btn-menu1">Instagram</a></li>
